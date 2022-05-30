@@ -1,0 +1,73 @@
+.fixed {
+    position: fixed;
+    z-index: 100;
+    height: 70px;
+  }
+.header {
+    background-color: $verde-header;
+    height: 70px;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    &__proyecto {
+      font-family: 'Abril Fatface', cursive;
+      font-style: italic;
+      font-size: 26px;
+      color: $color-texto;
+    }
+    &__marca {
+      height: 60px;
+      width: 60px;
+      text-decoration: none;
+      justify-self: flex-start;
+      margin-right: 7%;
+      margin-left: 0px;
+    }
+    &__logo {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+    &__derecha {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__lista {
+      padding: 0px;
+    }
+    .header-unite {
+      background-color: $verde-header ;
+      height: 70px;
+      width: 100%;
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      --bs-gutter-x: 0rem;
+    }
+    &__open {
+      display: none
+    }
+    &__container {
+      height: 100%;
+    }
+    &__row {
+      height: 60px;
+    }
+    &__row-unite {
+      height: 60px;
+    }
+  }
+
+  .fondo {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .bs {
+    --bs-gutter-x: 0;
+  }

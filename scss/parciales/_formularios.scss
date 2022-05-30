@@ -1,0 +1,60 @@
+.formulario {
+    background-image: linear-gradient(to left, #ada73e4a, #ada73e4a);
+    border: 1px solid $fondo-parrafos;
+    margin: 15px 20px 0px 20px;
+    padding: 5px;
+  }
+  .label {
+    color: $color-texto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .form-control {
+    height: 40px;
+  }
+  .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+  }
+  .form__genero {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__correo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  .section__titulo-form {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-texto;
+    opacity: 100%;
+    font-size: 21px;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 10px;
+    background-image: linear-gradient(to left, #ada73e4a, #ada73e4a);
+    border: 1px solid $fondo-parrafos;
+  }
+  .form-check-label {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-texto;
+  }
+  .enviar {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0px 5px 0px;
+    background-color: $verde-header;
+    color: $amarillo-nav;
+    transition: 0.2s;
+    border: $color-texto solid 1px;
+  }
+  .enviar:hover {
+    color: $verde-header;
+    background-color: $amarillo-nav;
+  }
