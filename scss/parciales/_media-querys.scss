@@ -85,8 +85,67 @@
         transition: all 2s;
         margin: 0px;
     }
+    .section__div {
+        min-width: 100px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include base-fondo(linear-gradient(to left, #ada73e4a, #ada73e4a), 1px solid $fondo-parrafos);
+        margin: 15px 20px 15px 20px;
+        padding: 10px;
+      }
+    .section__imagen {
+        height: 130px;
+        width: 230px;
+        object-fit: cover;
+        border: solid 2px $fondo-amarillo;
+        justify-self: center;
+      }
+    .card {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        height: 200px;
+        width: 100px;
+        border: $amarillo-nav solid 2px;
+        background-color: #fffc51;
+        margin: 10px;
+      }
+      .card-img-top {
+        border: $amarillo-nav solid 1px;
+        height: 45% !important;
+        object-fit: cover;
+      }
+      .card-title {
+        font-size: 10px;
+        font-style: italic;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8px;
+      }
+      .card-text {
+        margin-bottom: 2px;
+      }
+      .btn-primary {
+        width: 90%;
+        height: 30px;
+        background-color: #004503;
+        border: $amarillo-nav solid 1px;
+        text-align: center;
+        font-size: 6px;
+      }
+      .btn-primary:hover {
+        background-color: $amarillo-nav;
+        border: #004503 solid 1px;
+      }
   }
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .header__proyecto {
         font-family: 'Abril Fatface', cursive;
         font-style: italic;
@@ -124,6 +183,68 @@
     .div__article {
         margin-bottom: 60px;
     }
+    .section__parrafo-derecha {
+        font-size: 14px;
+    }
+    .section__div {
+        min-width: 100px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include base-fondo(linear-gradient(to left, #ada73e4a, #ada73e4a), 1px solid $fondo-parrafos);
+        margin: 15px 20px 15px 20px;
+        padding: 10px;
+      }
+    .section__imagen {
+        height: 130px;
+        width: 230px;
+        object-fit: cover;
+        border: solid 2px $fondo-amarillo;
+        justify-self: center;
+      }
+    .card {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        height: 200px;
+        width: 100px;
+        border: $amarillo-nav solid 2px;
+        background-color: #fffc51;
+        margin: 10px;
+      }
+      .card-img-top {
+        border: $amarillo-nav solid 1px;
+        height: 45% !important;
+        object-fit: cover;
+      }
+      .card-title {
+        font-size: 10px;
+        font-style: italic;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8px;
+      }
+      .card-text {
+        margin-bottom: 2px;
+      }
+      .btn-primary {
+        width: 90%;
+        height: 30px;
+        background-color: #004503;
+        border: $amarillo-nav solid 1px;
+        text-align: center;
+        font-size: 6px;
+      }
+      .btn-primary:hover {
+        background-color: $amarillo-nav;
+        border: #004503 solid 1px;
+      }
     .containerFooter {
         height: 60px;
     }
@@ -131,27 +252,27 @@
         height: 60px;
     }
     .footer__proyecto {
-        font-size: 15px;
+        font-size: 15px !important;
     }
     .footer__iconos {
         font-size: 15px;
         margin: 5px;
     }
     .footer__logo {
-        height: 30px;
-        width: 30px;
+        height: 30px !important ;
+        width: 30px !important;
     }
     .footer__marca {
-        height: 30px;
-        width: 30px;
+        height: 30px !important;
+        width: 30px !important;
     }
     .footer__derecha {
-        height: 30px;
+        height: 30px ;
     }
     .footer__izquierda {
-        height: 30px;
+        height: 30px !important;
     }
     .footer__lista {
-        height: 30px;
+        height: 30px !important;
     }
-  }
+}

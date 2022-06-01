@@ -41,6 +41,10 @@
     background-image: linear-gradient(to left, #ada73e4a, #ada73e4a);
     border: 1px solid $fondo-parrafos;
   }
+  .section__titulo-form-c {
+    @extend .section__titulo-form;
+    margin-left: 0px;
+  }
   .form-check-label {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: $color-texto;

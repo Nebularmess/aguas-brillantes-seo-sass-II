@@ -9,6 +9,16 @@
     justify-content: space-between;
     align-items: center;
   }
+  .section__derecha-n {
+    @extend .section__derecha;
+    justify-content: center;
+    align-content: space-between;
+    padding: 10px;
+  }
+  .videos {
+    display: flex;
+    justify-content: center;
+  }
   .section__titulo-derecha {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: $color-texto;
@@ -17,8 +27,17 @@
     text-align: center;
     margin: 10px;
     margin-top: 10px;
-    background-image: linear-gradient(to left, #0d6300d5,#0d6300d5);
-    border: 1px solid $verde-header;
+    @include base-fondo(linear-gradient(to left, #0d6300d5,#0d6300d5), 1px solid $verde-header);
+  }
+  .section__parrafo-derecha {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    text-align: justify;
+    color: $color-texto;
+    padding: 10px;
+    @include base-fondo(linear-gradient(to left, #0d63009f,#0d63009f), 1px solid $verde-header);
+
   }
   .carousel {
     border: solid 2px $verde-header;
@@ -27,11 +46,20 @@
     height: 400px;
     object-fit: cover;
   }
+  .carouselImagenes-c {
+    height: 370px;
+    object-fit: cover;
+  }
+  .carousel-c {
+    margin: 10px;
+  }
   .video {
     width: 90%;
-    height: 285px;
+    height: 300px;
     border: solid 1px $verde-header;
     margin-bottom: 10px;
+    padding: 0px;
+    border: yellow solid 2px;
   }
   .recuadro {
     margin: 0px;
@@ -53,3 +81,81 @@
   .recuadro__imagen:hover {
     transform: scale(1.2);
   }
+
+$estilos-imagenes: (
+  border: solid 2px #004503,
+  redondo: 5px,
+  ancho: 100%,
+  alto: 220px,
+);
+
+.recuadro__yacare {
+  border: map-get($estilos-imagenes, border);
+  border-radius: map-get($estilos-imagenes, redondo);
+  width: map-get($estilos-imagenes, ancho);
+  height: map-get($estilos-imagenes, alto);
+}
+.recuadro__carpincho {
+  border: map-get($estilos-imagenes, border);
+  width: map-get($estilos-imagenes, ancho);
+  height: map-get($estilos-imagenes, alto);
+}
+.recuadro__carpincho1 {
+  border: solid 2px #ffae00;
+  width: map-get($estilos-imagenes, ancho);
+  height: map-get($estilos-imagenes, alto);
+}
+.recuadro__ave {
+  border: solid 2px #00ff0d;
+  width: map-get($estilos-imagenes, ancho);
+  height: map-get($estilos-imagenes, alto);
+}
+.donaciones {
+  display: grid;
+  flex-direction: column;
+  border: $verde-header;
+  background-color: $fondo-verde;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 98%;
+  border: solid 1px $verde-header;
+}
+.card {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  height: 270px;
+  width: 190px;
+  border: $amarillo-nav solid 2px;
+  background-color: #fffc51;
+  margin: 10px;
+}
+.card-img-top {
+  border: $amarillo-nav solid 1px;
+  height: 45%;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 14px;
+  font-style: italic;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+.btn-primary {
+  width: 90%;
+  height: 30px;
+  background-color: #004503;
+  border: $amarillo-nav solid 1px;
+  text-align: center;
+  font-size: 12px;
+}
+.btn-primary:hover {
+  background-color: $amarillo-nav;
+  border: #004503 solid 1px;
+}
